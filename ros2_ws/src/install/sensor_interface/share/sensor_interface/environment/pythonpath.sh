@@ -1,1 +1,0 @@
-/home/heronsaba/ros2_challenge/ros2_ws/src/build/sensor_interface/ament_cmake_environment_hooks/pythonpath.sh

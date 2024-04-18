@@ -1,1 +1,0 @@
-/home/heronsaba/ros2_challenge/ros2_ws/src/senai_ros2/launch/challenge_launcher.py

@@ -1,1 +1,0 @@
-/home/heronsaba/ros2_challenge/ros2_ws/src/build/sensor_interface/rosidl_typesupport_fastrtps_c/sensor_interface/msg/detail/nums__rosidl_typesupport_fastrtps_c.h
