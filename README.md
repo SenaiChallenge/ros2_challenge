@@ -33,15 +33,11 @@ sudo apt install python3-colcon-common-extensions
 
 Em seu terminal siga para o workspace do projeto e execute o comando:
 ```bash
-    cd ros2_ws
+    cd ros2_ws/src
     colcon build --symlink-install
+    source install/setup.bash
 
 ``` 
-Após isso, vá para a pasta source, e execute os comandos abaixo:
-```bash
-    cd src
-    source install/setup.bash
-```
 ### Execução
 O projeto está pronto para execução. Seguindo as normas do desafio e as boas práticas ROS 2, o sistema deve ser executado através do script launcher.
 
