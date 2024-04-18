@@ -30,9 +30,10 @@ private:
     void cropImage(const cv::Mat& img, double percentage_W, double percentage_H);
 
     rclcpp::Subscription<sensor_interface::msg::Nums>::SharedPtr subscription_;
-    std::string image_path_, output_path_, default_image_path, default_output_path_;
-    int cropWidth, cropHeight, startX, startY;
+    std::string image_path_, output_path_, default_image_path, default_output_path, topic_name, output_file_name;
+    int cropWidth, cropHeight, startX, startY, buffer;
     double random_num1, random_num2;
+    sensor_msgs::msg::Image::SharedPtr msg_;
 };
 
 #endif // IMAGE_CROPPER_HPP

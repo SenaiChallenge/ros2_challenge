@@ -1,7 +1,7 @@
 launch_image_cropper:
   ros__parameters:
     image_path: "senai_ros2/images/img.jpg"
-    output_path: "senai_ros2/images/img_cropped.jpg"
+    output_path: "senai_ros2/images/"
     
 launch_image_receiver:
   ros__parameters:

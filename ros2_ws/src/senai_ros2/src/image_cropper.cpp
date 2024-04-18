@@ -1,9 +1,12 @@
-    #include "senai_ros2/image_cropper.hpp"
+#include "senai_ros2/image_cropper.hpp"
 
 ImageCropper::ImageCropper() : Node("image_cropper")
 {
     // Creating subscription
-    subscription_ = this->create_subscription<sensor_interface::msg::Nums>("random_numbers", 10, std::bind(&ImageCropper::random_numbers_callback, this, std::placeholders::_1));
+    topic_name = "random_numbers";
+    buffer = 10;
+
+    subscription_ = this->create_subscription<sensor_interface::msg::Nums>(topic_name, buffer, std::bind(&ImageCropper::random_numbers_callback, this, std::placeholders::_1));
 
     // Setting & getting initial parameters
     this->declare_parameter("image_path", "");
@@ -22,7 +25,15 @@ void ImageCropper::sendCropped(const std::shared_ptr<sensor_interface::srv::Send
     }
 
     // Converting image to msg with cv_bridge.
-    sensor_msgs::msg::Image::SharedPtr msg_ = cv_bridge::CvImage(std_msgs::msg::Header(), "bgr8", croppedImage).toImageMsg();
+    try
+    {
+        msg_ = cv_bridge::CvImage(std_msgs::msg::Header(), "bgr8", croppedImage).toImageMsg();
+    }
+    catch (cv_bridge::Exception &e)
+    {
+        RCLCPP_ERROR(this->get_logger(), "cv_bridge exception: %s", e.what());
+        return;
+    }
 
     response->cropped = *msg_.get();
     RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "Processed image sent through send_image service.");
@@ -33,6 +44,7 @@ void ImageCropper::validate_parameters()
     this->get_parameter("image_path", image_path_);
     this->get_parameter("output_path", output_path_);
     default_image_path = "senai_ros2/images/img.jpg";
+    default_output_path = "senai_ros2/images/img_cropped.jpg";
 
     if (!fs::exists(image_path_))
     {
@@ -43,16 +55,22 @@ void ImageCropper::validate_parameters()
         this->get_parameter("image_path", image_path_);
     }
 
+    if(!fs::exists(output_path_))
+    {
+        RCLCPP_WARN(this->get_logger(), "Output_path doesn't exist. Setting default value...");
+        std::vector<rclcpp::Parameter> all_new_parameters{rclcpp::Parameter("output_path",default_output_path)};
+
+        this->set_parameters(all_new_parameters);
+        this->get_parameter("image_path", output_path_);
+    }
+
 }
 
 void ImageCropper::random_numbers_callback(const sensor_interface::msg::Nums::SharedPtr msg)
 {
     validate_parameters();
 
-    random_num1 = msg->num1;
-    random_num2 = msg->num2;
-
-    RCLCPP_INFO(this->get_logger(), "Received random numbers: %.2f, %.2f", random_num1, random_num2);
+    RCLCPP_INFO(this->get_logger(), "Received random numbers: %.2f, %.2f", msg->random_num1, msg->random_num2);
 
     cv::Mat img = cv::imread(image_path_);
     if (img.empty())
@@ -60,7 +78,7 @@ void ImageCropper::random_numbers_callback(const sensor_interface::msg::Nums::Sh
         RCLCPP_ERROR(this->get_logger(), "(img.empty)Could not open or find the image. Verify the image directory or file...");
     }
     
-    cropImage(img, random_num1, random_num2);
+    cropImage(img, msg->random_num1, msg->random_num2);
 }
 
 void ImageCropper::cropImage(const cv::Mat &img, double percentage_W, double percentage_H)
@@ -79,7 +97,9 @@ void ImageCropper::cropImage(const cv::Mat &img, double percentage_W, double per
     cv::Rect roi(startX, startY, cropWidth, cropHeight);
     cv::Mat croppedImage = img(roi);
 
+    output_file_name = "img_cropped.jpg";
     // Save the cropped image into the output_path
+    output_path_ += output_file_name; 
     cv::imwrite(output_path_, croppedImage);
 }
 

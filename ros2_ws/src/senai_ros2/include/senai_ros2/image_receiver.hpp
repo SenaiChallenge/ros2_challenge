@@ -31,8 +31,8 @@ private:
     rclcpp::Publisher<sensor_interface::msg::Nums>::SharedPtr publisher_;
     rclcpp::TimerBase::SharedPtr timer_, request_timer_;
     rclcpp::Client<sensor_interface::srv::SendImage>::SharedPtr client_;
-    std::string save_directory_, file_name, image_path;
-    int requests_made_, requests_amount_;
+    std::string save_directory_, file_name, image_path, topic_name;
+    int requests_made_, requests_amount_, buffer;
 };
 
 #endif // IMAGE_RECEIVER_HPP

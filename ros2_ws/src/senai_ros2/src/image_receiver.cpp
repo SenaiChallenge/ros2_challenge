@@ -6,8 +6,10 @@ ImageReceiver::ImageReceiver() : Node("image_receiver"), requests_made_(0)
     this->declare_parameter("save_directory", "");
     this->declare_parameter("requests_amount", 5);
 
+    topic_name = "random_numbers";
+    buffer = 10;
     // Creating publisher with a custom msg "Nums"
-    publisher_ = this->create_publisher<sensor_interface::msg::Nums>("random_numbers", 10);
+    publisher_ = this->create_publisher<sensor_interface::msg::Nums>(topic_name, buffer);
     timer_ = this->create_wall_timer(5s, std::bind(&ImageReceiver::timer_callback, this));
     client_ = this->create_client<sensor_interface::srv::SendImage>("send_image");
     request_timer_ = this->create_wall_timer(10s, std::bind(&ImageReceiver::request_callback, this));
@@ -30,20 +32,7 @@ void ImageReceiver::validate_parameters()
 
     if (requests_amount_ <= requests_made_)
     {
-        RCLCPP_WARN(this->get_logger(), "Invalid parameter. Request_amount parameter smaller than requests_made! Setting +1 request.");
-        std::vector<rclcpp::Parameter> all_new_parameters{rclcpp::Parameter("requests_amount", requests_amount_ + 1)};
-
-        this->set_parameters(all_new_parameters);
-        this->get_parameter("requests_amount", requests_amount_);
-    }
-
-    if (requests_amount_ <= 0)
-    {
-        RCLCPP_WARN(this->get_logger(), "Request amount cannot be zero or less. Setting default value...");
-        std::vector<rclcpp::Parameter> all_new_parameters{rclcpp::Parameter("requests_amount", 5)};
-
-        this->set_parameters(all_new_parameters);
-        this->get_parameter("requests_amount", requests_amount_);
+        RCLCPP_WARN(this->get_logger(), "Invalid parameter. Request_amount parameter smaller than requests_made! Keeping the same requests_amount.");
     }
 }
 
@@ -57,9 +46,9 @@ void ImageReceiver::timer_callback()
     // Publishing the custom msg
     auto message = sensor_interface::msg::Nums();
 
-    message.num1 = dis(gen);
-    message.num2 = dis(gen);
-    RCLCPP_INFO(this->get_logger(), "Random numbers: %.2f, %.2f", message.num1, message.num2);
+    message.random_num1 = dis(gen);
+    message.random_num2 = dis(gen);
+    RCLCPP_INFO(this->get_logger(), "Random numbers: %.2f, %.2f", message.random_num1, message.random_num2);
     publisher_->publish(message);
 }
 

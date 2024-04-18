@@ -1,2 +1,2 @@
-float64 num1
-float64 num2
+float64 random_num1
+float64 random_num2
