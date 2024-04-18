@@ -31,7 +31,7 @@ Após seguir o passo a passo da instalação do ROS 2 Humble, é necessário ins
 sudo apt install python3-colcon-common-extensions
 ```
 
-Em seu terminal siga para o workspace do projeto e execute o comando:
+Em seu terminal siga para o workspace do projeto (ros2_ws/) e execute o comando:
 ```bash
     cd ros2_ws/src
     colcon build --symlink-install
