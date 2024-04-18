@@ -1,0 +1,6 @@
+msg/Nums.idl
+msg/Nums.msg
+srv/SendImage.idl
+srv/SendImage.srv
+srv/SendImage_Request.msg
+srv/SendImage_Response.msg

@@ -33,25 +33,16 @@ void ImageCropper::validate_parameters()
     this->get_parameter("image_path", image_path_);
     this->get_parameter("output_path", output_path_);
     default_image_path = "senai_ros2/images/img.jpg";
-    default_output_path_ = "senai_ros2/images/img.cropped.jpg";
 
     if (!fs::exists(image_path_))
     {
-        RCLCPP_WARN(this->get_logger(), "TESTE1 Image_path doesn't exist. Setting default value...");
+        RCLCPP_WARN(this->get_logger(), "Image_path doesn't exist. Setting default value...");
         std::vector<rclcpp::Parameter> all_new_parameters{rclcpp::Parameter("image_path",default_image_path)};
 
         this->set_parameters(all_new_parameters);
         this->get_parameter("image_path", image_path_);
     }
 
-    if(!fs::exists(output_path_))
-    {
-        RCLCPP_ERROR(this->get_logger(), "Output path doesn't exits. Setting default value..;");
-        std::vector<rclcpp::Parameter> all_new_parameters{rclcpp::Parameter("output_path", default_output_path_)};
-
-        this->set_parameters(all_new_parameters);
-        this->get_parameter("output_path", output_path_);
-    }
 }
 
 void ImageCropper::random_numbers_callback(const sensor_interface::msg::Nums::SharedPtr msg)

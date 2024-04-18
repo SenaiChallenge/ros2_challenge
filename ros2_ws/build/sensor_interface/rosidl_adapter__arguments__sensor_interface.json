@@ -1,0 +1,7 @@
+{
+  "package_name": "sensor_interface",
+  "non_idl_tuples": [
+    "/home/heronsaba/ros2_challenge/ros2_ws/src/sensor_interface:msg/Nums.msg",
+    "/home/heronsaba/ros2_challenge/ros2_ws/src/sensor_interface:srv/SendImage.srv"
+  ]
+}

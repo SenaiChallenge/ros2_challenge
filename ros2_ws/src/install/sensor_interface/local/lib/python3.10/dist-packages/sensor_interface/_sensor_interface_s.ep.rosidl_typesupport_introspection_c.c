@@ -1,0 +1,1 @@
+/home/heronsaba/ros2_challenge/ros2_ws/src/build/sensor_interface/rosidl_generator_py/sensor_interface/_sensor_interface_s.ep.rosidl_typesupport_introspection_c.c

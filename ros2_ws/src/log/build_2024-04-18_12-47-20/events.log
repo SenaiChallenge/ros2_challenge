@@ -1,0 +1,570 @@
+[0.000000] (-) TimerEvent: {}
+[0.000904] (sensor_interface) JobQueued: {'identifier': 'sensor_interface', 'dependencies': OrderedDict()}
+[0.000981] (senai_ros2) JobQueued: {'identifier': 'senai_ros2', 'dependencies': OrderedDict([('sensor_interface', '/home/heronsaba/ros2_challenge/ros2_ws/src/install/sensor_interface')])}
+[0.001044] (sensor_interface) JobStarted: {'identifier': 'sensor_interface'}
+[0.014801] (sensor_interface) JobProgress: {'identifier': 'sensor_interface', 'progress': 'cmake'}
+[0.015274] (sensor_interface) Command: {'cmd': ['/usr/bin/cmake', '/home/heronsaba/ros2_challenge/ros2_ws/src/sensor_interface', '-DAMENT_CMAKE_SYMLINK_INSTALL=1', '-DCMAKE_INSTALL_PREFIX=/home/heronsaba/ros2_challenge/ros2_ws/src/install/sensor_interface'], 'cwd': '/home/heronsaba/ros2_challenge/ros2_ws/src/build/sensor_interface', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_US:'), ('USER', 'heronsaba'), ('LC_TIME', 'pt_BR.UTF-8'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/heronsaba/ros2_challenges/ros2_ws/src/install/sensor_interface/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/heronsaba'), ('OLDPWD', '/home/heronsaba/ros2_challenge'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'pt_BR.UTF-8'), ('LC_CTYPE', 'pt_BR.UTF-8'), ('SYSTEMD_EXEC_PID', '1119'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/heronsaba/ros2_challenges/ros2_ws/src/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'heronsaba'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'heronsaba'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/heronsaba-virtual-machine:@/tmp/.ICE-unix/1030,unix/heronsaba-virtual-machine:/tmp/.ICE-unix/1030'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'pt_BR.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/fc2e1529_2adc_4b58_a912_6d4370622b0f'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'pt_BR.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.P430L2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.2409'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/heronsaba/ros2_challenges/ros2_ws/src/install/senai_ros2:/home/heronsaba/ros2_challenges/ros2_ws/src/install/sensor_interface:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'pt_BR.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'pt_BR.UTF-8'), ('LC_IDENTIFICATION', 'pt_BR.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/heronsaba/ros2_challenge/ros2_ws/src/build/sensor_interface'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/heronsaba/ros2_challenges/ros2_ws/src/install/sensor_interface/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'pt_BR.UTF-8'), ('LC_PAPER', 'pt_BR.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/heronsaba/ros2_challenges/ros2_ws/src/install/senai_ros2:/home/heronsaba/ros2_challenges/ros2_ws/src/install/sensor_interface:/opt/ros/humble')]), 'shell': False}
+[0.099943] (-) TimerEvent: {}
+[0.120547] (sensor_interface) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.187945] (sensor_interface) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[0.200092] (-) TimerEvent: {}
+[0.202046] (sensor_interface) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.296254] (sensor_interface) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.300449] (-) TimerEvent: {}
+[0.304378] (sensor_interface) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.304942] (sensor_interface) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.305506] (sensor_interface) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.309381] (sensor_interface) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.401319] (-) TimerEvent: {}
+[0.406050] (sensor_interface) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.413096] (sensor_interface) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.413504] (sensor_interface) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.414206] (sensor_interface) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.425023] (sensor_interface) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.8 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.501513] (-) TimerEvent: {}
+[0.589196] (sensor_interface) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[0.602056] (-) TimerEvent: {}
+[0.667340] (sensor_interface) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[0.702563] (-) TimerEvent: {}
+[0.704513] (sensor_interface) StdoutLine: {'line': b'-- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)\n'}
+[0.709143] (sensor_interface) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.719120] (sensor_interface) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[0.780985] (sensor_interface) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.803081] (-) TimerEvent: {}
+[0.831047] (sensor_interface) StdoutLine: {'line': b'-- Found geometry_msgs: 4.2.3 (/opt/ros/humble/share/geometry_msgs/cmake)\n'}
+[0.903287] (-) TimerEvent: {}
+[0.983350] (sensor_interface) StdoutLine: {'line': b'-- Found sensor_msgs: 4.2.3 (/opt/ros/humble/share/sensor_msgs/cmake)\n'}
+[1.003587] (-) TimerEvent: {}
+[1.104149] (-) TimerEvent: {}
+[1.204628] (-) TimerEvent: {}
+[1.305161] (-) TimerEvent: {}
+[1.405731] (-) TimerEvent: {}
+[1.463614] (sensor_interface) StdoutLine: {'line': b'-- Found ament_cmake_cppcheck: 0.12.10 (/opt/ros/humble/share/ament_cmake_cppcheck/cmake)\n'}
+[1.466645] (sensor_interface) StdoutLine: {'line': b'-- Found ament_cmake_cpplint: 0.12.10 (/opt/ros/humble/share/ament_cmake_cpplint/cmake)\n'}
+[1.469505] (sensor_interface) StdoutLine: {'line': b'-- Found ament_cmake_uncrustify: 0.12.10 (/opt/ros/humble/share/ament_cmake_uncrustify/cmake)\n'}
+[1.472815] (sensor_interface) StdoutLine: {'line': b'-- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)\n'}
+[1.506210] (-) TimerEvent: {}
+[1.606738] (-) TimerEvent: {}
+[1.707223] (-) TimerEvent: {}
+[1.807744] (-) TimerEvent: {}
+[1.827862] (sensor_interface) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[1.908257] (-) TimerEvent: {}
+[2.008814] (-) TimerEvent: {}
+[2.109866] (-) TimerEvent: {}
+[2.210342] (-) TimerEvent: {}
+[2.294243] (sensor_interface) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[2.310854] (-) TimerEvent: {}
+[2.323349] (sensor_interface) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.10.12", minimum required is "3.6") \n'}
+[2.325334] (sensor_interface) StdoutLine: {'line': b'-- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)\n'}
+[2.354133] (sensor_interface) StdoutLine: {'line': b'-- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.10.so (found suitable version "3.10.12", minimum required is "3.5") \n'}
+[2.354414] (sensor_interface) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[2.354498] (sensor_interface) StdoutLine: {'line': b'-- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10\n'}
+[2.354568] (sensor_interface) StdoutLine: {'line': b'-- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so\n'}
+[2.376246] (sensor_interface) StdoutLine: {'line': b'-- Found PythonExtra: .so  \n'}
+[2.411394] (-) TimerEvent: {}
+[2.469070] (sensor_interface) StdoutLine: {'line': b'-- Found ament_cmake_flake8: 0.12.10 (/opt/ros/humble/share/ament_cmake_flake8/cmake)\n'}
+[2.471672] (sensor_interface) StdoutLine: {'line': b'-- Found ament_cmake_pep257: 0.12.10 (/opt/ros/humble/share/ament_cmake_pep257/cmake)\n'}
+[2.476155] (sensor_interface) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.10 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[2.497398] (sensor_interface) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[2.498196] (sensor_interface) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[2.502819] (sensor_interface) StdoutLine: {'line': b'-- Configuring done\n'}
+[2.511897] (-) TimerEvent: {}
+[2.551153] (sensor_interface) StdoutLine: {'line': b'-- Generating done\n'}
+[2.554825] (sensor_interface) StdoutLine: {'line': b'-- Build files have been written to: /home/heronsaba/ros2_challenge/ros2_ws/src/build/sensor_interface\n'}
+[2.565121] (sensor_interface) CommandEnded: {'returncode': 0}
+[2.565944] (sensor_interface) JobProgress: {'identifier': 'sensor_interface', 'progress': 'build'}
+[2.567275] (sensor_interface) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/heronsaba/ros2_challenge/ros2_ws/src/build/sensor_interface', '--', '-j2', '-l2'], 'cwd': '/home/heronsaba/ros2_challenge/ros2_ws/src/build/sensor_interface', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_US:'), ('USER', 'heronsaba'), ('LC_TIME', 'pt_BR.UTF-8'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/heronsaba/ros2_challenges/ros2_ws/src/install/sensor_interface/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/heronsaba'), ('OLDPWD', '/home/heronsaba/ros2_challenge'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'pt_BR.UTF-8'), ('LC_CTYPE', 'pt_BR.UTF-8'), ('SYSTEMD_EXEC_PID', '1119'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/heronsaba/ros2_challenges/ros2_ws/src/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'heronsaba'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'heronsaba'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/heronsaba-virtual-machine:@/tmp/.ICE-unix/1030,unix/heronsaba-virtual-machine:/tmp/.ICE-unix/1030'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'pt_BR.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/fc2e1529_2adc_4b58_a912_6d4370622b0f'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'pt_BR.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.P430L2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.2409'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/heronsaba/ros2_challenges/ros2_ws/src/install/senai_ros2:/home/heronsaba/ros2_challenges/ros2_ws/src/install/sensor_interface:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'pt_BR.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'pt_BR.UTF-8'), ('LC_IDENTIFICATION', 'pt_BR.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/heronsaba/ros2_challenge/ros2_ws/src/build/sensor_interface'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/heronsaba/ros2_challenges/ros2_ws/src/install/sensor_interface/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'pt_BR.UTF-8'), ('LC_PAPER', 'pt_BR.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/heronsaba/ros2_challenges/ros2_ws/src/install/senai_ros2:/home/heronsaba/ros2_challenges/ros2_ws/src/install/sensor_interface:/opt/ros/humble')]), 'shell': False}
+[2.612412] (-) TimerEvent: {}
+[2.620330] (sensor_interface) StdoutLine: {'line': b'[  2%] \x1b[34m\x1b[1mGenerating C code for ROS interfaces\x1b[0m\n'}
+[2.633664] (sensor_interface) StdoutLine: {'line': b'[  5%] \x1b[34m\x1b[1mGenerating C++ code for ROS interfaces\x1b[0m\n'}
+[2.712914] (-) TimerEvent: {}
+[2.813434] (-) TimerEvent: {}
+[2.913958] (-) TimerEvent: {}
+[3.014552] (-) TimerEvent: {}
+[3.030357] (sensor_interface) StdoutLine: {'line': b'[  5%] Built target sensor_interface__cpp\n'}
+[3.064287] (sensor_interface) StdoutLine: {'line': b'[  5%] Built target ament_cmake_python_symlink_sensor_interface\n'}
+[3.077303] (sensor_interface) StdoutLine: {'line': b'[  7%] \x1b[34m\x1b[1mGenerating C++ type support dispatch for ROS interfaces\x1b[0m\n'}
+[3.089265] (sensor_interface) StdoutLine: {'line': b'[ 10%] \x1b[32mBuilding C object CMakeFiles/sensor_interface__rosidl_generator_c.dir/rosidl_generator_c/sensor_interface/msg/detail/nums__functions.c.o\x1b[0m\n'}
+[3.114730] (-) TimerEvent: {}
+[3.179571] (sensor_interface) StdoutLine: {'line': b'[ 12%] \x1b[32mBuilding C object CMakeFiles/sensor_interface__rosidl_generator_c.dir/rosidl_generator_c/sensor_interface/srv/detail/send_image__functions.c.o\x1b[0m\n'}
+[3.215001] (-) TimerEvent: {}
+[3.252476] (sensor_interface) StdoutLine: {'line': b'[ 15%] \x1b[32m\x1b[1mLinking C shared library libsensor_interface__rosidl_generator_c.so\x1b[0m\n'}
+[3.299413] (sensor_interface) StdoutLine: {'line': b'[ 15%] Built target sensor_interface__rosidl_generator_c\n'}
+[3.314569] (sensor_interface) StdoutLine: {'line': b'[ 17%] \x1b[34m\x1b[1mGenerating C++ type support for eProsima Fast-RTPS\x1b[0m\n'}
+[3.315525] (-) TimerEvent: {}
+[3.363649] (sensor_interface) StdoutLine: {'line': b'[ 20%] \x1b[32mBuilding CXX object CMakeFiles/sensor_interface__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/sensor_interface/msg/nums__type_support.cpp.o\x1b[0m\n'}
+[3.415896] (-) TimerEvent: {}
+[3.516561] (-) TimerEvent: {}
+[3.617118] (-) TimerEvent: {}
+[3.686630] (sensor_interface) StdoutLine: {'line': b'[ 23%] \x1b[32mBuilding CXX object CMakeFiles/sensor_interface__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/sensor_interface/msg/detail/dds_fastrtps/nums__type_support.cpp.o\x1b[0m\n'}
+[3.696618] (sensor_interface) StdoutLine: {'line': b'[ 25%] \x1b[32mBuilding CXX object CMakeFiles/sensor_interface__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/sensor_interface/srv/send_image__type_support.cpp.o\x1b[0m\n'}
+[3.717359] (-) TimerEvent: {}
+[3.818149] (-) TimerEvent: {}
+[3.918650] (-) TimerEvent: {}
+[3.987549] (sensor_interface) StdoutLine: {'line': b'[ 28%] \x1b[32m\x1b[1mLinking CXX shared library libsensor_interface__rosidl_typesupport_cpp.so\x1b[0m\n'}
+[4.019171] (-) TimerEvent: {}
+[4.036660] (sensor_interface) StdoutLine: {'line': b'[ 28%] Built target sensor_interface__rosidl_typesupport_cpp\n'}
+[4.050324] (sensor_interface) StdoutLine: {'line': b'[ 30%] \x1b[34m\x1b[1mGenerating C++ introspection for ROS interfaces\x1b[0m\n'}
+[4.119687] (-) TimerEvent: {}
+[4.131673] (sensor_interface) StdoutLine: {'line': b'[ 33%] \x1b[32mBuilding CXX object CMakeFiles/sensor_interface__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/sensor_interface/srv/detail/dds_fastrtps/send_image__type_support.cpp.o\x1b[0m\n'}
+[4.219949] (-) TimerEvent: {}
+[4.320730] (-) TimerEvent: {}
+[4.375566] (sensor_interface) StdoutLine: {'line': b'[ 35%] \x1b[32mBuilding CXX object CMakeFiles/sensor_interface__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/sensor_interface/msg/detail/nums__type_support.cpp.o\x1b[0m\n'}
+[4.421252] (-) TimerEvent: {}
+[4.521784] (-) TimerEvent: {}
+[4.597195] (sensor_interface) StdoutLine: {'line': b'[ 38%] \x1b[32m\x1b[1mLinking CXX shared library libsensor_interface__rosidl_typesupport_fastrtps_cpp.so\x1b[0m\n'}
+[4.628830] (-) TimerEvent: {}
+[4.713767] (sensor_interface) StdoutLine: {'line': b'[ 38%] Built target sensor_interface__rosidl_typesupport_fastrtps_cpp\n'}
+[4.729343] (-) TimerEvent: {}
+[4.799333] (sensor_interface) StdoutLine: {'line': b'[ 41%] \x1b[32mBuilding CXX object CMakeFiles/sensor_interface__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/sensor_interface/srv/detail/send_image__type_support.cpp.o\x1b[0m\n'}
+[4.829846] (-) TimerEvent: {}
+[4.930325] (-) TimerEvent: {}
+[4.997949] (sensor_interface) StdoutLine: {'line': b'running egg_info\n'}
+[4.999345] (sensor_interface) StdoutLine: {'line': b'creating sensor_interface.egg-info\n'}
+[4.999781] (sensor_interface) StdoutLine: {'line': b'writing sensor_interface.egg-info/PKG-INFO\n'}
+[5.000158] (sensor_interface) StdoutLine: {'line': b'writing dependency_links to sensor_interface.egg-info/dependency_links.txt\n'}
+[5.000533] (sensor_interface) StdoutLine: {'line': b'writing top-level names to sensor_interface.egg-info/top_level.txt\n'}
+[5.000952] (sensor_interface) StdoutLine: {'line': b"writing manifest file 'sensor_interface.egg-info/SOURCES.txt'\n"}
+[5.003643] (sensor_interface) StdoutLine: {'line': b"reading manifest file 'sensor_interface.egg-info/SOURCES.txt'\n"}
+[5.004412] (sensor_interface) StdoutLine: {'line': b"writing manifest file 'sensor_interface.egg-info/SOURCES.txt'\n"}
+[5.030851] (-) TimerEvent: {}
+[5.037626] (sensor_interface) StdoutLine: {'line': b'[ 41%] Built target ament_cmake_python_build_sensor_interface_egg\n'}
+[5.052510] (sensor_interface) StdoutLine: {'line': b'[ 43%] \x1b[34m\x1b[1mGenerating C type support for eProsima Fast-RTPS\x1b[0m\n'}
+[5.131361] (-) TimerEvent: {}
+[5.227638] (sensor_interface) StdoutLine: {'line': b'[ 46%] \x1b[32m\x1b[1mLinking CXX shared library libsensor_interface__rosidl_typesupport_introspection_cpp.so\x1b[0m\n'}
+[5.231851] (-) TimerEvent: {}
+[5.306594] (sensor_interface) StdoutLine: {'line': b'[ 46%] Built target sensor_interface__rosidl_typesupport_introspection_cpp\n'}
+[5.320383] (sensor_interface) StdoutLine: {'line': b'[ 48%] \x1b[34m\x1b[1mGenerating C introspection for ROS interfaces\x1b[0m\n'}
+[5.332438] (-) TimerEvent: {}
+[5.409556] (sensor_interface) StdoutLine: {'line': b'[ 51%] \x1b[32mBuilding CXX object CMakeFiles/sensor_interface__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/sensor_interface/msg/detail/nums__type_support_c.cpp.o\x1b[0m\n'}
+[5.432971] (-) TimerEvent: {}
+[5.533489] (-) TimerEvent: {}
+[5.634163] (-) TimerEvent: {}
+[5.661241] (sensor_interface) StdoutLine: {'line': b'[ 53%] \x1b[32mBuilding C object CMakeFiles/sensor_interface__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/sensor_interface/msg/detail/nums__type_support.c.o\x1b[0m\n'}
+[5.705889] (sensor_interface) StdoutLine: {'line': b'[ 56%] \x1b[32mBuilding C object CMakeFiles/sensor_interface__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/sensor_interface/srv/detail/send_image__type_support.c.o\x1b[0m\n'}
+[5.734493] (-) TimerEvent: {}
+[5.756764] (sensor_interface) StdoutLine: {'line': b'[ 58%] \x1b[32m\x1b[1mLinking C shared library libsensor_interface__rosidl_typesupport_introspection_c.so\x1b[0m\n'}
+[5.769255] (sensor_interface) StdoutLine: {'line': b'[ 61%] \x1b[32mBuilding CXX object CMakeFiles/sensor_interface__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/sensor_interface/srv/detail/send_image__type_support_c.cpp.o\x1b[0m\n'}
+[5.807916] (sensor_interface) StdoutLine: {'line': b'[ 61%] Built target sensor_interface__rosidl_typesupport_introspection_c\n'}
+[5.822296] (sensor_interface) StdoutLine: {'line': b'[ 64%] \x1b[34m\x1b[1mGenerating C type support dispatch for ROS interfaces\x1b[0m\n'}
+[5.835008] (-) TimerEvent: {}
+[5.935529] (-) TimerEvent: {}
+[6.036023] (-) TimerEvent: {}
+[6.097913] (sensor_interface) StdoutLine: {'line': b'[ 66%] \x1b[32mBuilding CXX object CMakeFiles/sensor_interface__rosidl_typesupport_c.dir/rosidl_typesupport_c/sensor_interface/msg/nums__type_support.cpp.o\x1b[0m\n'}
+[6.135241] (sensor_interface) StdoutLine: {'line': b'[ 69%] \x1b[32mBuilding CXX object CMakeFiles/sensor_interface__rosidl_typesupport_c.dir/rosidl_typesupport_c/sensor_interface/srv/send_image__type_support.cpp.o\x1b[0m\n'}
+[6.136514] (-) TimerEvent: {}
+[6.142549] (sensor_interface) StdoutLine: {'line': b'[ 71%] \x1b[32m\x1b[1mLinking CXX shared library libsensor_interface__rosidl_typesupport_fastrtps_c.so\x1b[0m\n'}
+[6.178391] (sensor_interface) StdoutLine: {'line': b'[ 74%] \x1b[32m\x1b[1mLinking CXX shared library libsensor_interface__rosidl_typesupport_c.so\x1b[0m\n'}
+[6.233857] (sensor_interface) StdoutLine: {'line': b'[ 74%] Built target sensor_interface__rosidl_typesupport_c\n'}
+[6.237115] (-) TimerEvent: {}
+[6.246060] (sensor_interface) StdoutLine: {'line': b'[ 74%] Built target sensor_interface__rosidl_typesupport_fastrtps_c\n'}
+[6.274307] (sensor_interface) StdoutLine: {'line': b'[ 74%] Built target sensor_interface\n'}
+[6.300301] (sensor_interface) StdoutLine: {'line': b'[ 76%] \x1b[34m\x1b[1mGenerating Python code for ROS interfaces\x1b[0m\n'}
+[6.337622] (-) TimerEvent: {}
+[6.438151] (-) TimerEvent: {}
+[6.538615] (-) TimerEvent: {}
+[6.639133] (-) TimerEvent: {}
+[6.739682] (-) TimerEvent: {}
+[6.804087] (sensor_interface) StdoutLine: {'line': b'[ 76%] Built target sensor_interface__py\n'}
+[6.829022] (sensor_interface) StdoutLine: {'line': b'[ 79%] \x1b[32mBuilding C object CMakeFiles/sensor_interface__rosidl_generator_py.dir/rosidl_generator_py/sensor_interface/msg/_nums_s.c.o\x1b[0m\n'}
+[6.830778] (sensor_interface) StdoutLine: {'line': b'[ 82%] \x1b[32mBuilding C object CMakeFiles/sensor_interface__rosidl_generator_py.dir/rosidl_generator_py/sensor_interface/srv/_send_image_s.c.o\x1b[0m\n'}
+[6.840015] (-) TimerEvent: {}
+[6.940698] (-) TimerEvent: {}
+[6.981087] (sensor_interface) StdoutLine: {'line': b'[ 84%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/sensor_interface/libsensor_interface__rosidl_generator_py.so\x1b[0m\n'}
+[7.030924] (sensor_interface) StdoutLine: {'line': b'[ 84%] Built target sensor_interface__rosidl_generator_py\n'}
+[7.041225] (-) TimerEvent: {}
+[7.057199] (sensor_interface) StdoutLine: {'line': b'[ 89%] \x1b[32mBuilding C object CMakeFiles/sensor_interface__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/sensor_interface/_sensor_interface_s.ep.rosidl_typesupport_fastrtps_c.c.o\x1b[0m\n'}
+[7.057453] (sensor_interface) StdoutLine: {'line': b'[ 89%] \x1b[32mBuilding C object CMakeFiles/sensor_interface__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/sensor_interface/_sensor_interface_s.ep.rosidl_typesupport_introspection_c.c.o\x1b[0m\n'}
+[7.141787] (-) TimerEvent: {}
+[7.182028] (sensor_interface) StdoutLine: {'line': b'[ 92%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/sensor_interface/sensor_interface_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[7.195480] (sensor_interface) StdoutLine: {'line': b'[ 94%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/sensor_interface/sensor_interface_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[7.238575] (sensor_interface) StdoutLine: {'line': b'[ 94%] Built target sensor_interface__rosidl_typesupport_introspection_c__pyext\n'}
+[7.242254] (-) TimerEvent: {}
+[7.249416] (sensor_interface) StdoutLine: {'line': b'[ 94%] Built target sensor_interface__rosidl_typesupport_fastrtps_c__pyext\n'}
+[7.266075] (sensor_interface) StdoutLine: {'line': b'[ 97%] \x1b[32mBuilding C object CMakeFiles/sensor_interface__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/sensor_interface/_sensor_interface_s.ep.rosidl_typesupport_c.c.o\x1b[0m\n'}
+[7.342783] (-) TimerEvent: {}
+[7.387457] (sensor_interface) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/sensor_interface/sensor_interface_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[7.440183] (sensor_interface) StdoutLine: {'line': b'[100%] Built target sensor_interface__rosidl_typesupport_c__pyext\n'}
+[7.443258] (-) TimerEvent: {}
+[7.458292] (sensor_interface) CommandEnded: {'returncode': 0}
+[7.543791] (-) TimerEvent: {}
+[7.559594] (sensor_interface) JobProgress: {'identifier': 'sensor_interface', 'progress': 'install'}
+[7.572696] (sensor_interface) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/heronsaba/ros2_challenge/ros2_ws/src/build/sensor_interface'], 'cwd': '/home/heronsaba/ros2_challenge/ros2_ws/src/build/sensor_interface', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_US:'), ('USER', 'heronsaba'), ('LC_TIME', 'pt_BR.UTF-8'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/heronsaba/ros2_challenges/ros2_ws/src/install/sensor_interface/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/heronsaba'), ('OLDPWD', '/home/heronsaba/ros2_challenge'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'pt_BR.UTF-8'), ('LC_CTYPE', 'pt_BR.UTF-8'), ('SYSTEMD_EXEC_PID', '1119'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/heronsaba/ros2_challenges/ros2_ws/src/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'heronsaba'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'heronsaba'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/heronsaba-virtual-machine:@/tmp/.ICE-unix/1030,unix/heronsaba-virtual-machine:/tmp/.ICE-unix/1030'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'pt_BR.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/fc2e1529_2adc_4b58_a912_6d4370622b0f'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'pt_BR.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.P430L2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.2409'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/heronsaba/ros2_challenges/ros2_ws/src/install/senai_ros2:/home/heronsaba/ros2_challenges/ros2_ws/src/install/sensor_interface:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'pt_BR.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'pt_BR.UTF-8'), ('LC_IDENTIFICATION', 'pt_BR.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/heronsaba/ros2_challenge/ros2_ws/src/build/sensor_interface'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/heronsaba/ros2_challenges/ros2_ws/src/install/sensor_interface/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'pt_BR.UTF-8'), ('LC_PAPER', 'pt_BR.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/heronsaba/ros2_challenges/ros2_ws/src/install/senai_ros2:/home/heronsaba/ros2_challenges/ros2_ws/src/install/sensor_interface:/opt/ros/humble')]), 'shell': False}
+[7.582019] (sensor_interface) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[7.582695] (sensor_interface) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[7.583208] (sensor_interface) StdoutLine: {'line': b'-- Symlinking: /home/heronsaba/ros2_challenge/ros2_ws/src/install/sensor_interface/share/ament_index/resource_index/rosidl_interfaces/sensor_interface\n'}
+[7.595326] (sensor_interface) StdoutLine: {'line': b'-- Symlinking: /home/heronsaba/ros2_challenge/ros2_ws/src/install/sensor_interface/include/sensor_interface/sensor_interface/msg/detail/nums__functions.h\n'}
+[7.606291] (sensor_interface) StdoutLine: {'line': b'-- Symlinking: /home/heronsaba/ros2_challenge/ros2_ws/src/install/sensor_interface/include/sensor_interface/sensor_interface/msg/detail/nums__struct.h\n'}
+[7.617241] (sensor_interface) StdoutLine: {'line': b'-- Symlinking: /home/heronsaba/ros2_challenge/ros2_ws/src/install/sensor_interface/include/sensor_interface/sensor_interface/msg/detail/nums__type_support.h\n'}
+[7.628184] (sensor_interface) StdoutLine: {'line': b'-- Symlinking: /home/heronsaba/ros2_challenge/ros2_ws/src/install/sensor_interface/include/sensor_interface/sensor_interface/msg/nums.h\n'}
+[7.639164] (sensor_interface) StdoutLine: {'line': b'-- Symlinking: /home/heronsaba/ros2_challenge/ros2_ws/src/install/sensor_interface/include/sensor_interface/sensor_interface/msg/rosidl_generator_c__visibility_control.h\n'}
+[7.644322] (-) TimerEvent: {}
+[7.650692] (sensor_interface) StdoutLine: {'line': b'-- Symlinking: /home/heronsaba/ros2_challenge/ros2_ws/src/install/sensor_interface/include/sensor_interface/sensor_interface/srv/detail/send_image__functions.h\n'}
+[7.662137] (sensor_interface) StdoutLine: {'line': b'-- Symlinking: /home/heronsaba/ros2_challenge/ros2_ws/src/install/sensor_interface/include/sensor_interface/sensor_interface/srv/detail/send_image__struct.h\n'}
+[7.674137] (sensor_interface) StdoutLine: {'line': b'-- Symlinking: /home/heronsaba/ros2_challenge/ros2_ws/src/install/sensor_interface/include/sensor_interface/sensor_interface/srv/detail/send_image__type_support.h\n'}
+[7.685621] (sensor_interface) StdoutLine: {'line': b'-- Symlinking: /home/heronsaba/ros2_challenge/ros2_ws/src/install/sensor_interface/include/sensor_interface/sensor_interface/srv/send_image.h\n'}
+[7.697141] (sensor_interface) StdoutLine: {'line': b'-- Symlinking: /home/heronsaba/ros2_challenge/ros2_ws/src/install/sensor_interface/share/sensor_interface/environment/library_path.sh\n'}
+[7.708019] (sensor_interface) StdoutLine: {'line': b'-- Symlinking: /home/heronsaba/ros2_challenge/ros2_ws/src/install/sensor_interface/share/sensor_interface/environment/library_path.dsv\n'}
+[7.719886] (sensor_interface) StdoutLine: {'line': b'-- Symlinking: /home/heronsaba/ros2_challenge/ros2_ws/src/install/sensor_interface/include/sensor_interface/sensor_interface/msg/detail/nums__rosidl_typesupport_fastrtps_c.h\n'}
+[7.732651] (sensor_interface) StdoutLine: {'line': b'-- Symlinking: /home/heronsaba/ros2_challenge/ros2_ws/src/install/sensor_interface/include/sensor_interface/sensor_interface/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[7.744849] (-) TimerEvent: {}
+[7.747802] (sensor_interface) StdoutLine: {'line': b'-- Symlinking: /home/heronsaba/ros2_challenge/ros2_ws/src/install/sensor_interface/include/sensor_interface/sensor_interface/srv/detail/send_image__rosidl_typesupport_fastrtps_c.h\n'}
+[7.761962] (sensor_interface) StdoutLine: {'line': b'-- Symlinking: /home/heronsaba/ros2_challenge/ros2_ws/src/install/sensor_interface/include/sensor_interface/sensor_interface/msg/detail/nums__rosidl_typesupport_introspection_c.h\n'}
+[7.773858] (sensor_interface) StdoutLine: {'line': b'-- Symlinking: /home/heronsaba/ros2_challenge/ros2_ws/src/install/sensor_interface/include/sensor_interface/sensor_interface/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[7.785140] (sensor_interface) StdoutLine: {'line': b'-- Symlinking: /home/heronsaba/ros2_challenge/ros2_ws/src/install/sensor_interface/include/sensor_interface/sensor_interface/srv/detail/send_image__rosidl_typesupport_introspection_c.h\n'}
+[7.796757] (sensor_interface) StdoutLine: {'line': b'-- Symlinking: /home/heronsaba/ros2_challenge/ros2_ws/src/install/sensor_interface/include/sensor_interface/sensor_interface/msg/detail/nums__builder.hpp\n'}
+[7.808706] (sensor_interface) StdoutLine: {'line': b'-- Symlinking: /home/heronsaba/ros2_challenge/ros2_ws/src/install/sensor_interface/include/sensor_interface/sensor_interface/msg/detail/nums__struct.hpp\n'}
+[7.819818] (sensor_interface) StdoutLine: {'line': b'-- Symlinking: /home/heronsaba/ros2_challenge/ros2_ws/src/install/sensor_interface/include/sensor_interface/sensor_interface/msg/detail/nums__traits.hpp\n'}
+[7.830704] (sensor_interface) StdoutLine: {'line': b'-- Symlinking: /home/heronsaba/ros2_challenge/ros2_ws/src/install/sensor_interface/include/sensor_interface/sensor_interface/msg/nums.hpp\n'}
+[7.845432] (-) TimerEvent: {}
+[7.848763] (sensor_interface) StdoutLine: {'line': b'-- Symlinking: /home/heronsaba/ros2_challenge/ros2_ws/src/install/sensor_interface/include/sensor_interface/sensor_interface/srv/detail/send_image__builder.hpp\n'}
+[7.859434] (sensor_interface) StdoutLine: {'line': b'-- Symlinking: /home/heronsaba/ros2_challenge/ros2_ws/src/install/sensor_interface/include/sensor_interface/sensor_interface/srv/detail/send_image__struct.hpp\n'}
+[7.870051] (sensor_interface) StdoutLine: {'line': b'-- Symlinking: /home/heronsaba/ros2_challenge/ros2_ws/src/install/sensor_interface/include/sensor_interface/sensor_interface/srv/detail/send_image__traits.hpp\n'}
+[7.881992] (sensor_interface) StdoutLine: {'line': b'-- Symlinking: /home/heronsaba/ros2_challenge/ros2_ws/src/install/sensor_interface/include/sensor_interface/sensor_interface/srv/send_image.hpp\n'}
+[7.893094] (sensor_interface) StdoutLine: {'line': b'-- Symlinking: /home/heronsaba/ros2_challenge/ros2_ws/src/install/sensor_interface/include/sensor_interface/sensor_interface/msg/detail/nums__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[7.903988] (sensor_interface) StdoutLine: {'line': b'-- Symlinking: /home/heronsaba/ros2_challenge/ros2_ws/src/install/sensor_interface/include/sensor_interface/sensor_interface/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[7.914869] (sensor_interface) StdoutLine: {'line': b'-- Symlinking: /home/heronsaba/ros2_challenge/ros2_ws/src/install/sensor_interface/include/sensor_interface/sensor_interface/srv/detail/send_image__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[7.927234] (sensor_interface) StdoutLine: {'line': b'-- Symlinking: /home/heronsaba/ros2_challenge/ros2_ws/src/install/sensor_interface/include/sensor_interface/sensor_interface/msg/detail/nums__rosidl_typesupport_introspection_cpp.hpp\n'}
+[7.939191] (sensor_interface) StdoutLine: {'line': b'-- Symlinking: /home/heronsaba/ros2_challenge/ros2_ws/src/install/sensor_interface/include/sensor_interface/sensor_interface/srv/detail/send_image__rosidl_typesupport_introspection_cpp.hpp\n'}
+[7.945949] (-) TimerEvent: {}
+[7.950882] (sensor_interface) StdoutLine: {'line': b'-- Symlinking: /home/heronsaba/ros2_challenge/ros2_ws/src/install/sensor_interface/share/sensor_interface/environment/pythonpath.sh\n'}
+[7.962868] (sensor_interface) StdoutLine: {'line': b'-- Symlinking: /home/heronsaba/ros2_challenge/ros2_ws/src/install/sensor_interface/share/sensor_interface/environment/pythonpath.dsv\n'}
+[7.976951] (sensor_interface) StdoutLine: {'line': b'-- Symlinking: /home/heronsaba/ros2_challenge/ros2_ws/src/install/sensor_interface/local/lib/python3.10/dist-packages/sensor_interface-0.0.0-py3.10.egg-info/PKG-INFO\n'}
+[7.991611] (sensor_interface) StdoutLine: {'line': b'-- Symlinking: /home/heronsaba/ros2_challenge/ros2_ws/src/install/sensor_interface/local/lib/python3.10/dist-packages/sensor_interface-0.0.0-py3.10.egg-info/SOURCES.txt\n'}
+[8.006053] (sensor_interface) StdoutLine: {'line': b'-- Symlinking: /home/heronsaba/ros2_challenge/ros2_ws/src/install/sensor_interface/local/lib/python3.10/dist-packages/sensor_interface-0.0.0-py3.10.egg-info/dependency_links.txt\n'}
+[8.017189] (sensor_interface) StdoutLine: {'line': b'-- Symlinking: /home/heronsaba/ros2_challenge/ros2_ws/src/install/sensor_interface/local/lib/python3.10/dist-packages/sensor_interface-0.0.0-py3.10.egg-info/top_level.txt\n'}
+[8.029603] (sensor_interface) StdoutLine: {'line': b'-- Symlinking: /home/heronsaba/ros2_challenge/ros2_ws/src/install/sensor_interface/local/lib/python3.10/dist-packages/sensor_interface/__init__.py\n'}
+[8.040772] (sensor_interface) StdoutLine: {'line': b'-- Symlinking: /home/heronsaba/ros2_challenge/ros2_ws/src/install/sensor_interface/local/lib/python3.10/dist-packages/sensor_interface/_sensor_interface_s.ep.rosidl_typesupport_c.c\n'}
+[8.046392] (-) TimerEvent: {}
+[8.052514] (sensor_interface) StdoutLine: {'line': b'-- Symlinking: /home/heronsaba/ros2_challenge/ros2_ws/src/install/sensor_interface/local/lib/python3.10/dist-packages/sensor_interface/_sensor_interface_s.ep.rosidl_typesupport_fastrtps_c.c\n'}
+[8.063932] (sensor_interface) StdoutLine: {'line': b'-- Symlinking: /home/heronsaba/ros2_challenge/ros2_ws/src/install/sensor_interface/local/lib/python3.10/dist-packages/sensor_interface/_sensor_interface_s.ep.rosidl_typesupport_introspection_c.c\n'}
+[8.076631] (sensor_interface) StdoutLine: {'line': b'-- Symlinking: /home/heronsaba/ros2_challenge/ros2_ws/src/install/sensor_interface/local/lib/python3.10/dist-packages/sensor_interface/libsensor_interface__rosidl_generator_py.so\n'}
+[8.089431] (sensor_interface) StdoutLine: {'line': b'-- Symlinking: /home/heronsaba/ros2_challenge/ros2_ws/src/install/sensor_interface/local/lib/python3.10/dist-packages/sensor_interface/msg/__init__.py\n'}
+[8.101448] (sensor_interface) StdoutLine: {'line': b'-- Symlinking: /home/heronsaba/ros2_challenge/ros2_ws/src/install/sensor_interface/local/lib/python3.10/dist-packages/sensor_interface/msg/_nums.py\n'}
+[8.112687] (sensor_interface) StdoutLine: {'line': b'-- Symlinking: /home/heronsaba/ros2_challenge/ros2_ws/src/install/sensor_interface/local/lib/python3.10/dist-packages/sensor_interface/msg/_nums_s.c\n'}
+[8.124306] (sensor_interface) StdoutLine: {'line': b'-- Symlinking: /home/heronsaba/ros2_challenge/ros2_ws/src/install/sensor_interface/local/lib/python3.10/dist-packages/sensor_interface/sensor_interface_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[8.136237] (sensor_interface) StdoutLine: {'line': b'-- Symlinking: /home/heronsaba/ros2_challenge/ros2_ws/src/install/sensor_interface/local/lib/python3.10/dist-packages/sensor_interface/sensor_interface_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[8.146930] (-) TimerEvent: {}
+[8.148068] (sensor_interface) StdoutLine: {'line': b'-- Symlinking: /home/heronsaba/ros2_challenge/ros2_ws/src/install/sensor_interface/local/lib/python3.10/dist-packages/sensor_interface/sensor_interface_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[8.159730] (sensor_interface) StdoutLine: {'line': b'-- Symlinking: /home/heronsaba/ros2_challenge/ros2_ws/src/install/sensor_interface/local/lib/python3.10/dist-packages/sensor_interface/srv/__init__.py\n'}
+[8.171019] (sensor_interface) StdoutLine: {'line': b'-- Symlinking: /home/heronsaba/ros2_challenge/ros2_ws/src/install/sensor_interface/local/lib/python3.10/dist-packages/sensor_interface/srv/_send_image.py\n'}
+[8.183255] (sensor_interface) StdoutLine: {'line': b'-- Symlinking: /home/heronsaba/ros2_challenge/ros2_ws/src/install/sensor_interface/local/lib/python3.10/dist-packages/sensor_interface/srv/_send_image_s.c\n'}
+[8.196122] (sensor_interface) StdoutLine: {'line': b'-- Up-to-date symlink: /home/heronsaba/ros2_challenge/ros2_ws/src/install/sensor_interface/local/lib/python3.10/dist-packages/sensor_interface/sensor_interface_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[8.196629] (sensor_interface) StdoutLine: {'line': b'-- Up-to-date symlink: /home/heronsaba/ros2_challenge/ros2_ws/src/install/sensor_interface/local/lib/python3.10/dist-packages/sensor_interface/sensor_interface_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[8.197179] (sensor_interface) StdoutLine: {'line': b'-- Up-to-date symlink: /home/heronsaba/ros2_challenge/ros2_ws/src/install/sensor_interface/local/lib/python3.10/dist-packages/sensor_interface/sensor_interface_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[8.197759] (sensor_interface) StdoutLine: {'line': b'-- Symlinking: /home/heronsaba/ros2_challenge/ros2_ws/src/install/sensor_interface/share/sensor_interface/msg/Nums.idl\n'}
+[8.209328] (sensor_interface) StdoutLine: {'line': b'-- Symlinking: /home/heronsaba/ros2_challenge/ros2_ws/src/install/sensor_interface/share/sensor_interface/srv/SendImage.idl\n'}
+[8.220566] (sensor_interface) StdoutLine: {'line': b'-- Symlinking: /home/heronsaba/ros2_challenge/ros2_ws/src/install/sensor_interface/share/sensor_interface/msg/Nums.msg\n'}
+[8.231738] (sensor_interface) StdoutLine: {'line': b'-- Symlinking: /home/heronsaba/ros2_challenge/ros2_ws/src/install/sensor_interface/share/sensor_interface/srv/SendImage.srv\n'}
+[8.243455] (sensor_interface) StdoutLine: {'line': b'-- Symlinking: /home/heronsaba/ros2_challenge/ros2_ws/src/install/sensor_interface/share/sensor_interface/srv/SendImage_Request.msg\n'}
+[8.247422] (-) TimerEvent: {}
+[8.255558] (sensor_interface) StdoutLine: {'line': b'-- Symlinking: /home/heronsaba/ros2_challenge/ros2_ws/src/install/sensor_interface/share/sensor_interface/srv/SendImage_Response.msg\n'}
+[8.269403] (sensor_interface) StdoutLine: {'line': b'-- Symlinking: /home/heronsaba/ros2_challenge/ros2_ws/src/install/sensor_interface/share/ament_index/resource_index/package_run_dependencies/sensor_interface\n'}
+[8.281019] (sensor_interface) StdoutLine: {'line': b'-- Symlinking: /home/heronsaba/ros2_challenge/ros2_ws/src/install/sensor_interface/share/ament_index/resource_index/parent_prefix_path/sensor_interface\n'}
+[8.291845] (sensor_interface) StdoutLine: {'line': b'-- Symlinking: /home/heronsaba/ros2_challenge/ros2_ws/src/install/sensor_interface/share/sensor_interface/environment/ament_prefix_path.sh\n'}
+[8.304030] (sensor_interface) StdoutLine: {'line': b'-- Symlinking: /home/heronsaba/ros2_challenge/ros2_ws/src/install/sensor_interface/share/sensor_interface/environment/ament_prefix_path.dsv\n'}
+[8.315620] (sensor_interface) StdoutLine: {'line': b'-- Symlinking: /home/heronsaba/ros2_challenge/ros2_ws/src/install/sensor_interface/share/sensor_interface/environment/path.sh\n'}
+[8.327191] (sensor_interface) StdoutLine: {'line': b'-- Symlinking: /home/heronsaba/ros2_challenge/ros2_ws/src/install/sensor_interface/share/sensor_interface/environment/path.dsv\n'}
+[8.338796] (sensor_interface) StdoutLine: {'line': b'-- Symlinking: /home/heronsaba/ros2_challenge/ros2_ws/src/install/sensor_interface/share/sensor_interface/local_setup.bash\n'}
+[8.347961] (-) TimerEvent: {}
+[8.350597] (sensor_interface) StdoutLine: {'line': b'-- Symlinking: /home/heronsaba/ros2_challenge/ros2_ws/src/install/sensor_interface/share/sensor_interface/local_setup.sh\n'}
+[8.361999] (sensor_interface) StdoutLine: {'line': b'-- Symlinking: /home/heronsaba/ros2_challenge/ros2_ws/src/install/sensor_interface/share/sensor_interface/local_setup.zsh\n'}
+[8.373184] (sensor_interface) StdoutLine: {'line': b'-- Symlinking: /home/heronsaba/ros2_challenge/ros2_ws/src/install/sensor_interface/share/sensor_interface/local_setup.dsv\n'}
+[8.388877] (sensor_interface) StdoutLine: {'line': b'-- Symlinking: /home/heronsaba/ros2_challenge/ros2_ws/src/install/sensor_interface/share/sensor_interface/package.dsv\n'}
+[8.400647] (sensor_interface) StdoutLine: {'line': b'-- Symlinking: /home/heronsaba/ros2_challenge/ros2_ws/src/install/sensor_interface/share/ament_index/resource_index/packages/sensor_interface\n'}
+[8.411629] (sensor_interface) StdoutLine: {'line': b'-- Symlinking: /home/heronsaba/ros2_challenge/ros2_ws/src/install/sensor_interface/share/sensor_interface/cmake/rosidl_cmake-extras.cmake\n'}
+[8.423291] (sensor_interface) StdoutLine: {'line': b'-- Symlinking: /home/heronsaba/ros2_challenge/ros2_ws/src/install/sensor_interface/share/sensor_interface/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[8.434364] (sensor_interface) StdoutLine: {'line': b'-- Symlinking: /home/heronsaba/ros2_challenge/ros2_ws/src/install/sensor_interface/share/sensor_interface/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[8.445297] (sensor_interface) StdoutLine: {'line': b'-- Symlinking: /home/heronsaba/ros2_challenge/ros2_ws/src/install/sensor_interface/share/sensor_interface/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[8.448474] (-) TimerEvent: {}
+[8.463989] (sensor_interface) StdoutLine: {'line': b'-- Symlinking: /home/heronsaba/ros2_challenge/ros2_ws/src/install/sensor_interface/share/sensor_interface/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[8.475462] (sensor_interface) StdoutLine: {'line': b'-- Symlinking: /home/heronsaba/ros2_challenge/ros2_ws/src/install/sensor_interface/share/sensor_interface/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[8.486825] (sensor_interface) StdoutLine: {'line': b'-- Symlinking: /home/heronsaba/ros2_challenge/ros2_ws/src/install/sensor_interface/share/sensor_interface/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[8.499191] (sensor_interface) StdoutLine: {'line': b'-- Symlinking: /home/heronsaba/ros2_challenge/ros2_ws/src/install/sensor_interface/share/sensor_interface/cmake/sensor_interfaceConfig.cmake\n'}
+[8.510227] (sensor_interface) StdoutLine: {'line': b'-- Symlinking: /home/heronsaba/ros2_challenge/ros2_ws/src/install/sensor_interface/share/sensor_interface/cmake/sensor_interfaceConfig-version.cmake\n'}
+[8.521703] (sensor_interface) StdoutLine: {'line': b'-- Symlinking: /home/heronsaba/ros2_challenge/ros2_ws/src/install/sensor_interface/share/sensor_interface/package.xml\n'}
+[8.533007] (sensor_interface) StdoutLine: {'line': b'-- Installing: /home/heronsaba/ros2_challenge/ros2_ws/src/install/sensor_interface/lib/libsensor_interface__rosidl_generator_c.so\n'}
+[8.534557] (sensor_interface) StdoutLine: {'line': b'-- Set runtime path of "/home/heronsaba/ros2_challenge/ros2_ws/src/install/sensor_interface/lib/libsensor_interface__rosidl_generator_c.so" to ""\n'}
+[8.534831] (sensor_interface) StdoutLine: {'line': b'-- Installing: /home/heronsaba/ros2_challenge/ros2_ws/src/install/sensor_interface/lib/libsensor_interface__rosidl_typesupport_fastrtps_c.so\n'}
+[8.535430] (sensor_interface) StdoutLine: {'line': b'-- Set runtime path of "/home/heronsaba/ros2_challenge/ros2_ws/src/install/sensor_interface/lib/libsensor_interface__rosidl_typesupport_fastrtps_c.so" to ""\n'}
+[8.535663] (sensor_interface) StdoutLine: {'line': b'-- Installing: /home/heronsaba/ros2_challenge/ros2_ws/src/install/sensor_interface/lib/libsensor_interface__rosidl_typesupport_introspection_c.so\n'}
+[8.536276] (sensor_interface) StdoutLine: {'line': b'-- Set runtime path of "/home/heronsaba/ros2_challenge/ros2_ws/src/install/sensor_interface/lib/libsensor_interface__rosidl_typesupport_introspection_c.so" to ""\n'}
+[8.536519] (sensor_interface) StdoutLine: {'line': b'-- Installing: /home/heronsaba/ros2_challenge/ros2_ws/src/install/sensor_interface/lib/libsensor_interface__rosidl_typesupport_c.so\n'}
+[8.537044] (sensor_interface) StdoutLine: {'line': b'-- Set runtime path of "/home/heronsaba/ros2_challenge/ros2_ws/src/install/sensor_interface/lib/libsensor_interface__rosidl_typesupport_c.so" to ""\n'}
+[8.537269] (sensor_interface) StdoutLine: {'line': b'-- Installing: /home/heronsaba/ros2_challenge/ros2_ws/src/install/sensor_interface/lib/libsensor_interface__rosidl_typesupport_fastrtps_cpp.so\n'}
+[8.537850] (sensor_interface) StdoutLine: {'line': b'-- Set runtime path of "/home/heronsaba/ros2_challenge/ros2_ws/src/install/sensor_interface/lib/libsensor_interface__rosidl_typesupport_fastrtps_cpp.so" to ""\n'}
+[8.538147] (sensor_interface) StdoutLine: {'line': b'-- Installing: /home/heronsaba/ros2_challenge/ros2_ws/src/install/sensor_interface/lib/libsensor_interface__rosidl_typesupport_introspection_cpp.so\n'}
+[8.538737] (sensor_interface) StdoutLine: {'line': b'-- Set runtime path of "/home/heronsaba/ros2_challenge/ros2_ws/src/install/sensor_interface/lib/libsensor_interface__rosidl_typesupport_introspection_cpp.so" to ""\n'}
+[8.538975] (sensor_interface) StdoutLine: {'line': b'-- Installing: /home/heronsaba/ros2_challenge/ros2_ws/src/install/sensor_interface/lib/libsensor_interface__rosidl_typesupport_cpp.so\n'}
+[8.539505] (sensor_interface) StdoutLine: {'line': b'-- Set runtime path of "/home/heronsaba/ros2_challenge/ros2_ws/src/install/sensor_interface/lib/libsensor_interface__rosidl_typesupport_cpp.so" to ""\n'}
+[8.548990] (-) TimerEvent: {}
+[8.575143] (sensor_interface) StdoutLine: {'line': b"Listing '/home/heronsaba/ros2_challenge/ros2_ws/src/install/sensor_interface/local/lib/python3.10/dist-packages/sensor_interface'...\n"}
+[8.576625] (sensor_interface) StdoutLine: {'line': b"Compiling '/home/heronsaba/ros2_challenge/ros2_ws/src/install/sensor_interface/local/lib/python3.10/dist-packages/sensor_interface/__init__.py'...\n"}
+[8.577006] (sensor_interface) StdoutLine: {'line': b"Listing '/home/heronsaba/ros2_challenge/ros2_ws/src/install/sensor_interface/local/lib/python3.10/dist-packages/sensor_interface/msg'...\n"}
+[8.577306] (sensor_interface) StdoutLine: {'line': b"Compiling '/home/heronsaba/ros2_challenge/ros2_ws/src/install/sensor_interface/local/lib/python3.10/dist-packages/sensor_interface/msg/__init__.py'...\n"}
+[8.577524] (sensor_interface) StdoutLine: {'line': b"Compiling '/home/heronsaba/ros2_challenge/ros2_ws/src/install/sensor_interface/local/lib/python3.10/dist-packages/sensor_interface/msg/_nums.py'...\n"}
+[8.577733] (sensor_interface) StdoutLine: {'line': b"Listing '/home/heronsaba/ros2_challenge/ros2_ws/src/install/sensor_interface/local/lib/python3.10/dist-packages/sensor_interface/srv'...\n"}
+[8.577959] (sensor_interface) StdoutLine: {'line': b"Compiling '/home/heronsaba/ros2_challenge/ros2_ws/src/install/sensor_interface/local/lib/python3.10/dist-packages/sensor_interface/srv/__init__.py'...\n"}
+[8.578224] (sensor_interface) StdoutLine: {'line': b"Compiling '/home/heronsaba/ros2_challenge/ros2_ws/src/install/sensor_interface/local/lib/python3.10/dist-packages/sensor_interface/srv/_send_image.py'...\n"}
+[8.581696] (sensor_interface) StdoutLine: {'line': b'-- Installing: /home/heronsaba/ros2_challenge/ros2_ws/src/install/sensor_interface/lib/libsensor_interface__rosidl_generator_py.so\n'}
+[8.582474] (sensor_interface) StdoutLine: {'line': b'-- Set runtime path of "/home/heronsaba/ros2_challenge/ros2_ws/src/install/sensor_interface/lib/libsensor_interface__rosidl_generator_py.so" to ""\n'}
+[8.582740] (sensor_interface) StdoutLine: {'line': b'-- Installing: /home/heronsaba/ros2_challenge/ros2_ws/src/install/sensor_interface/share/sensor_interface/cmake/export_sensor_interface__rosidl_generator_cExport.cmake\n'}
+[8.583254] (sensor_interface) StdoutLine: {'line': b'-- Installing: /home/heronsaba/ros2_challenge/ros2_ws/src/install/sensor_interface/share/sensor_interface/cmake/export_sensor_interface__rosidl_generator_cExport-noconfig.cmake\n'}
+[8.583647] (sensor_interface) StdoutLine: {'line': b'-- Installing: /home/heronsaba/ros2_challenge/ros2_ws/src/install/sensor_interface/share/sensor_interface/cmake/export_sensor_interface__rosidl_typesupport_fastrtps_cExport.cmake\n'}
+[8.584001] (sensor_interface) StdoutLine: {'line': b'-- Installing: /home/heronsaba/ros2_challenge/ros2_ws/src/install/sensor_interface/share/sensor_interface/cmake/export_sensor_interface__rosidl_typesupport_fastrtps_cExport-noconfig.cmake\n'}
+[8.584344] (sensor_interface) StdoutLine: {'line': b'-- Installing: /home/heronsaba/ros2_challenge/ros2_ws/src/install/sensor_interface/share/sensor_interface/cmake/sensor_interface__rosidl_typesupport_introspection_cExport.cmake\n'}
+[8.584695] (sensor_interface) StdoutLine: {'line': b'-- Installing: /home/heronsaba/ros2_challenge/ros2_ws/src/install/sensor_interface/share/sensor_interface/cmake/sensor_interface__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[8.585054] (sensor_interface) StdoutLine: {'line': b'-- Installing: /home/heronsaba/ros2_challenge/ros2_ws/src/install/sensor_interface/share/sensor_interface/cmake/sensor_interface__rosidl_typesupport_cExport.cmake\n'}
+[8.585389] (sensor_interface) StdoutLine: {'line': b'-- Installing: /home/heronsaba/ros2_challenge/ros2_ws/src/install/sensor_interface/share/sensor_interface/cmake/sensor_interface__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[8.585752] (sensor_interface) StdoutLine: {'line': b'-- Installing: /home/heronsaba/ros2_challenge/ros2_ws/src/install/sensor_interface/share/sensor_interface/cmake/export_sensor_interface__rosidl_generator_cppExport.cmake\n'}
+[8.586125] (sensor_interface) StdoutLine: {'line': b'-- Installing: /home/heronsaba/ros2_challenge/ros2_ws/src/install/sensor_interface/share/sensor_interface/cmake/export_sensor_interface__rosidl_typesupport_fastrtps_cppExport.cmake\n'}
+[8.586528] (sensor_interface) StdoutLine: {'line': b'-- Installing: /home/heronsaba/ros2_challenge/ros2_ws/src/install/sensor_interface/share/sensor_interface/cmake/export_sensor_interface__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake\n'}
+[8.586966] (sensor_interface) StdoutLine: {'line': b'-- Installing: /home/heronsaba/ros2_challenge/ros2_ws/src/install/sensor_interface/share/sensor_interface/cmake/sensor_interface__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[8.587308] (sensor_interface) StdoutLine: {'line': b'-- Installing: /home/heronsaba/ros2_challenge/ros2_ws/src/install/sensor_interface/share/sensor_interface/cmake/sensor_interface__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[8.587664] (sensor_interface) StdoutLine: {'line': b'-- Installing: /home/heronsaba/ros2_challenge/ros2_ws/src/install/sensor_interface/share/sensor_interface/cmake/sensor_interface__rosidl_typesupport_cppExport.cmake\n'}
+[8.588016] (sensor_interface) StdoutLine: {'line': b'-- Installing: /home/heronsaba/ros2_challenge/ros2_ws/src/install/sensor_interface/share/sensor_interface/cmake/sensor_interface__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[8.588375] (sensor_interface) StdoutLine: {'line': b'-- Installing: /home/heronsaba/ros2_challenge/ros2_ws/src/install/sensor_interface/share/sensor_interface/cmake/export_sensor_interface__rosidl_generator_pyExport.cmake\n'}
+[8.588734] (sensor_interface) StdoutLine: {'line': b'-- Installing: /home/heronsaba/ros2_challenge/ros2_ws/src/install/sensor_interface/share/sensor_interface/cmake/export_sensor_interface__rosidl_generator_pyExport-noconfig.cmake\n'}
+[8.592065] (sensor_interface) CommandEnded: {'returncode': 0}
+[8.649083] (-) TimerEvent: {}
+[8.720410] (sensor_interface) JobEnded: {'identifier': 'sensor_interface', 'rc': 0}
+[8.721247] (senai_ros2) JobStarted: {'identifier': 'senai_ros2'}
+[8.730040] (senai_ros2) JobProgress: {'identifier': 'senai_ros2', 'progress': 'cmake'}
+[8.730267] (senai_ros2) Command: {'cmd': ['/usr/bin/cmake', '/home/heronsaba/ros2_challenge/ros2_ws/src/senai_ros2', '-DAMENT_CMAKE_SYMLINK_INSTALL=1', '-DCMAKE_INSTALL_PREFIX=/home/heronsaba/ros2_challenge/ros2_ws/src/install/senai_ros2'], 'cwd': '/home/heronsaba/ros2_challenge/ros2_ws/src/build/senai_ros2', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_US:'), ('USER', 'heronsaba'), ('LC_TIME', 'pt_BR.UTF-8'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/heronsaba/ros2_challenge/ros2_ws/src/install/sensor_interface/lib:/home/heronsaba/ros2_challenges/ros2_ws/src/install/sensor_interface/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/heronsaba'), ('OLDPWD', '/home/heronsaba/ros2_challenge'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'pt_BR.UTF-8'), ('LC_CTYPE', 'pt_BR.UTF-8'), ('SYSTEMD_EXEC_PID', '1119'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/heronsaba/ros2_challenges/ros2_ws/src/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'heronsaba'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'heronsaba'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/heronsaba-virtual-machine:@/tmp/.ICE-unix/1030,unix/heronsaba-virtual-machine:/tmp/.ICE-unix/1030'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'pt_BR.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/fc2e1529_2adc_4b58_a912_6d4370622b0f'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'pt_BR.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.P430L2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.2409'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/heronsaba/ros2_challenge/ros2_ws/src/install/sensor_interface:/home/heronsaba/ros2_challenges/ros2_ws/src/install/senai_ros2:/home/heronsaba/ros2_challenges/ros2_ws/src/install/sensor_interface:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'pt_BR.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'pt_BR.UTF-8'), ('LC_IDENTIFICATION', 'pt_BR.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/heronsaba/ros2_challenge/ros2_ws/src/build/senai_ros2'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/heronsaba/ros2_challenge/ros2_ws/src/install/sensor_interface/local/lib/python3.10/dist-packages:/home/heronsaba/ros2_challenges/ros2_ws/src/install/sensor_interface/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'pt_BR.UTF-8'), ('LC_PAPER', 'pt_BR.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/heronsaba/ros2_challenge/ros2_ws/src/install/sensor_interface:/home/heronsaba/ros2_challenges/ros2_ws/src/install/senai_ros2:/home/heronsaba/ros2_challenges/ros2_ws/src/install/sensor_interface:/opt/ros/humble')]), 'shell': False}
+[8.749276] (-) TimerEvent: {}
+[8.800823] (senai_ros2) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[8.849578] (-) TimerEvent: {}
+[8.862609] (senai_ros2) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[8.870830] (senai_ros2) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[8.949956] (-) TimerEvent: {}
+[8.953188] (senai_ros2) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[8.961236] (senai_ros2) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[8.961538] (senai_ros2) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[8.961964] (senai_ros2) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[8.965047] (senai_ros2) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[9.050165] (-) TimerEvent: {}
+[9.060478] (senai_ros2) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[9.068658] (senai_ros2) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[9.068883] (senai_ros2) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[9.069358] (senai_ros2) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[9.072122] (senai_ros2) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.8 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[9.150600] (-) TimerEvent: {}
+[9.240278] (senai_ros2) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[9.251122] (-) TimerEvent: {}
+[9.306014] (senai_ros2) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[9.344656] (senai_ros2) StdoutLine: {'line': b'-- Found rclcpp: 16.0.8 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[9.351335] (-) TimerEvent: {}
+[9.401870] (senai_ros2) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[9.406955] (senai_ros2) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[9.415914] (senai_ros2) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[9.431212] (senai_ros2) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[9.451699] (-) TimerEvent: {}
+[9.452414] (senai_ros2) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[9.548998] (senai_ros2) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.1 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[9.552160] (-) TimerEvent: {}
+[9.552823] (senai_ros2) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.6 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[9.652509] (-) TimerEvent: {}
+[9.693404] (senai_ros2) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  \n'}
+[9.730032] (senai_ros2) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/humble/include  \n'}
+[9.752760] (-) TimerEvent: {}
+[9.791734] (senai_ros2) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[9.806287] (senai_ros2) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[9.853253] (-) TimerEvent: {}
+[9.894267] (senai_ros2) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[9.894713] (senai_ros2) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[9.953777] (-) TimerEvent: {}
+[9.979573] (senai_ros2) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success\n'}
+[9.981260] (senai_ros2) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[10.054286] (-) TimerEvent: {}
+[10.154802] (-) TimerEvent: {}
+[10.182865] (senai_ros2) StdoutLine: {'line': b'-- Found sensor_msgs: 4.2.3 (/opt/ros/humble/share/sensor_msgs/cmake)\n'}
+[10.255352] (-) TimerEvent: {}
+[10.327410] (senai_ros2) StdoutLine: {'line': b'-- Found cv_bridge: 3.2.1 (/opt/ros/humble/share/cv_bridge/cmake)\n'}
+[10.355161] (senai_ros2) StdoutLine: {'line': b'-- Found OpenCV: /usr (found version "4.5.4") \n'}
+[10.355368] (-) TimerEvent: {}
+[10.355624] (senai_ros2) StdoutLine: {'line': b'-- Found sensor_interface: 0.0.0 (/home/heronsaba/ros2_challenge/ros2_ws/src/install/sensor_interface/share/sensor_interface/cmake)\n'}
+[10.455874] (-) TimerEvent: {}
+[10.486932] (senai_ros2) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.10 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[10.556414] (-) TimerEvent: {}
+[10.574109] (senai_ros2) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[10.574447] (senai_ros2) StdoutLine: {'line': b'-- Configured cppcheck include dirs: /home/heronsaba/ros2_challenge/ros2_ws/src/senai_ros2/include\n'}
+[10.574558] (senai_ros2) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[10.575021] (senai_ros2) StdoutLine: {'line': b"-- Added test 'flake8' to check Python code syntax and style conventions\n"}
+[10.575764] (senai_ros2) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[10.576366] (senai_ros2) StdoutLine: {'line': b"-- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257\n"}
+[10.578046] (senai_ros2) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[10.578178] (senai_ros2) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[10.578656] (senai_ros2) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[10.580397] (senai_ros2) StdoutLine: {'line': b'-- Configuring done\n'}
+[10.605599] (senai_ros2) StdoutLine: {'line': b'-- Generating done\n'}
+[10.607790] (senai_ros2) StdoutLine: {'line': b'-- Build files have been written to: /home/heronsaba/ros2_challenge/ros2_ws/src/build/senai_ros2\n'}
+[10.618667] (senai_ros2) CommandEnded: {'returncode': 0}
+[10.619488] (senai_ros2) JobProgress: {'identifier': 'senai_ros2', 'progress': 'build'}
+[10.619861] (senai_ros2) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/heronsaba/ros2_challenge/ros2_ws/src/build/senai_ros2', '--', '-j2', '-l2'], 'cwd': '/home/heronsaba/ros2_challenge/ros2_ws/src/build/senai_ros2', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_US:'), ('USER', 'heronsaba'), ('LC_TIME', 'pt_BR.UTF-8'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/heronsaba/ros2_challenge/ros2_ws/src/install/sensor_interface/lib:/home/heronsaba/ros2_challenges/ros2_ws/src/install/sensor_interface/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/heronsaba'), ('OLDPWD', '/home/heronsaba/ros2_challenge'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'pt_BR.UTF-8'), ('LC_CTYPE', 'pt_BR.UTF-8'), ('SYSTEMD_EXEC_PID', '1119'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/heronsaba/ros2_challenges/ros2_ws/src/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'heronsaba'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'heronsaba'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/heronsaba-virtual-machine:@/tmp/.ICE-unix/1030,unix/heronsaba-virtual-machine:/tmp/.ICE-unix/1030'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'pt_BR.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/fc2e1529_2adc_4b58_a912_6d4370622b0f'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'pt_BR.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.P430L2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.2409'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/heronsaba/ros2_challenge/ros2_ws/src/install/sensor_interface:/home/heronsaba/ros2_challenges/ros2_ws/src/install/senai_ros2:/home/heronsaba/ros2_challenges/ros2_ws/src/install/sensor_interface:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'pt_BR.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'pt_BR.UTF-8'), ('LC_IDENTIFICATION', 'pt_BR.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/heronsaba/ros2_challenge/ros2_ws/src/build/senai_ros2'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/heronsaba/ros2_challenge/ros2_ws/src/install/sensor_interface/local/lib/python3.10/dist-packages:/home/heronsaba/ros2_challenges/ros2_ws/src/install/sensor_interface/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'pt_BR.UTF-8'), ('LC_PAPER', 'pt_BR.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/heronsaba/ros2_challenge/ros2_ws/src/install/sensor_interface:/home/heronsaba/ros2_challenges/ros2_ws/src/install/senai_ros2:/home/heronsaba/ros2_challenges/ros2_ws/src/install/sensor_interface:/opt/ros/humble')]), 'shell': False}
+[10.656903] (-) TimerEvent: {}
+[10.688037] (senai_ros2) StdoutLine: {'line': b'[ 25%] \x1b[32mBuilding CXX object CMakeFiles/cropper.dir/src/image_cropper.cpp.o\x1b[0m\n'}
+[10.699139] (senai_ros2) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/receiver.dir/src/image_receiver.cpp.o\x1b[0m\n'}
+[10.757478] (-) TimerEvent: {}
+[10.858435] (-) TimerEvent: {}
+[10.958987] (-) TimerEvent: {}
+[11.059467] (-) TimerEvent: {}
+[11.160038] (-) TimerEvent: {}
+[11.261012] (-) TimerEvent: {}
+[11.361591] (-) TimerEvent: {}
+[11.462077] (-) TimerEvent: {}
+[11.562568] (-) TimerEvent: {}
+[11.663088] (-) TimerEvent: {}
+[11.763607] (-) TimerEvent: {}
+[11.864121] (-) TimerEvent: {}
+[11.964648] (-) TimerEvent: {}
+[12.065167] (-) TimerEvent: {}
+[12.165698] (-) TimerEvent: {}
+[12.266195] (-) TimerEvent: {}
+[12.366637] (-) TimerEvent: {}
+[12.467249] (-) TimerEvent: {}
+[12.567763] (-) TimerEvent: {}
+[12.668285] (-) TimerEvent: {}
+[12.768800] (-) TimerEvent: {}
+[12.869352] (-) TimerEvent: {}
+[12.969841] (-) TimerEvent: {}
+[13.070343] (-) TimerEvent: {}
+[13.170807] (-) TimerEvent: {}
+[13.271385] (-) TimerEvent: {}
+[13.371917] (-) TimerEvent: {}
+[13.472437] (-) TimerEvent: {}
+[13.572954] (-) TimerEvent: {}
+[13.673475] (-) TimerEvent: {}
+[13.773991] (-) TimerEvent: {}
+[13.874490] (-) TimerEvent: {}
+[13.975016] (-) TimerEvent: {}
+[14.075540] (-) TimerEvent: {}
+[14.176046] (-) TimerEvent: {}
+[14.276601] (-) TimerEvent: {}
+[14.377102] (-) TimerEvent: {}
+[14.477643] (-) TimerEvent: {}
+[14.578144] (-) TimerEvent: {}
+[14.678650] (-) TimerEvent: {}
+[14.780181] (-) TimerEvent: {}
+[14.880755] (-) TimerEvent: {}
+[14.981717] (-) TimerEvent: {}
+[15.082296] (-) TimerEvent: {}
+[15.183245] (-) TimerEvent: {}
+[15.283799] (-) TimerEvent: {}
+[15.384316] (-) TimerEvent: {}
+[15.485333] (-) TimerEvent: {}
+[15.585840] (-) TimerEvent: {}
+[15.686344] (-) TimerEvent: {}
+[15.787358] (-) TimerEvent: {}
+[15.887868] (-) TimerEvent: {}
+[15.988405] (-) TimerEvent: {}
+[16.088920] (-) TimerEvent: {}
+[16.189444] (-) TimerEvent: {}
+[16.289958] (-) TimerEvent: {}
+[16.390469] (-) TimerEvent: {}
+[16.490910] (-) TimerEvent: {}
+[16.591508] (-) TimerEvent: {}
+[16.692041] (-) TimerEvent: {}
+[16.792548] (-) TimerEvent: {}
+[16.893054] (-) TimerEvent: {}
+[16.993583] (-) TimerEvent: {}
+[17.094092] (-) TimerEvent: {}
+[17.194630] (-) TimerEvent: {}
+[17.295073] (-) TimerEvent: {}
+[17.395628] (-) TimerEvent: {}
+[17.496177] (-) TimerEvent: {}
+[17.596699] (-) TimerEvent: {}
+[17.697205] (-) TimerEvent: {}
+[17.797739] (-) TimerEvent: {}
+[17.898243] (-) TimerEvent: {}
+[17.953495] (senai_ros2) StdoutLine: {'line': b'[ 75%] \x1b[32m\x1b[1mLinking CXX executable receiver\x1b[0m\n'}
+[17.998768] (-) TimerEvent: {}
+[18.099305] (-) TimerEvent: {}
+[18.199806] (-) TimerEvent: {}
+[18.300337] (-) TimerEvent: {}
+[18.400852] (-) TimerEvent: {}
+[18.501379] (-) TimerEvent: {}
+[18.601901] (-) TimerEvent: {}
+[18.630668] (senai_ros2) StdoutLine: {'line': b'[ 75%] Built target receiver\n'}
+[18.702395] (-) TimerEvent: {}
+[18.802969] (-) TimerEvent: {}
+[18.903927] (-) TimerEvent: {}
+[19.004501] (-) TimerEvent: {}
+[19.104967] (-) TimerEvent: {}
+[19.205512] (-) TimerEvent: {}
+[19.306021] (-) TimerEvent: {}
+[19.406524] (-) TimerEvent: {}
+[19.507037] (-) TimerEvent: {}
+[19.607558] (-) TimerEvent: {}
+[19.708105] (-) TimerEvent: {}
+[19.808601] (-) TimerEvent: {}
+[19.909115] (-) TimerEvent: {}
+[20.009632] (-) TimerEvent: {}
+[20.110159] (-) TimerEvent: {}
+[20.210667] (-) TimerEvent: {}
+[20.311183] (-) TimerEvent: {}
+[20.411700] (-) TimerEvent: {}
+[20.512213] (-) TimerEvent: {}
+[20.612749] (-) TimerEvent: {}
+[20.713307] (-) TimerEvent: {}
+[20.813790] (-) TimerEvent: {}
+[20.914296] (-) TimerEvent: {}
+[21.014816] (-) TimerEvent: {}
+[21.115343] (-) TimerEvent: {}
+[21.215852] (-) TimerEvent: {}
+[21.316385] (-) TimerEvent: {}
+[21.416905] (-) TimerEvent: {}
+[21.517417] (-) TimerEvent: {}
+[21.617935] (-) TimerEvent: {}
+[21.718450] (-) TimerEvent: {}
+[21.818963] (-) TimerEvent: {}
+[21.919483] (-) TimerEvent: {}
+[22.019997] (-) TimerEvent: {}
+[22.120553] (-) TimerEvent: {}
+[22.221040] (-) TimerEvent: {}
+[22.321605] (-) TimerEvent: {}
+[22.422081] (-) TimerEvent: {}
+[22.522635] (-) TimerEvent: {}
+[22.623623] (-) TimerEvent: {}
+[22.724244] (-) TimerEvent: {}
+[22.825160] (-) TimerEvent: {}
+[22.925688] (-) TimerEvent: {}
+[22.990796] (senai_ros2) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable cropper\x1b[0m\n'}
+[23.026209] (-) TimerEvent: {}
+[23.126713] (-) TimerEvent: {}
+[23.227231] (-) TimerEvent: {}
+[23.327739] (-) TimerEvent: {}
+[23.428269] (-) TimerEvent: {}
+[23.528797] (-) TimerEvent: {}
+[23.629361] (-) TimerEvent: {}
+[23.729836] (-) TimerEvent: {}
+[23.781888] (senai_ros2) StdoutLine: {'line': b'[100%] Built target cropper\n'}
+[23.797288] (senai_ros2) CommandEnded: {'returncode': 0}
+[23.830300] (-) TimerEvent: {}
+[23.835694] (senai_ros2) JobProgress: {'identifier': 'senai_ros2', 'progress': 'install'}
+[23.836023] (senai_ros2) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/heronsaba/ros2_challenge/ros2_ws/src/build/senai_ros2'], 'cwd': '/home/heronsaba/ros2_challenge/ros2_ws/src/build/senai_ros2', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_US:'), ('USER', 'heronsaba'), ('LC_TIME', 'pt_BR.UTF-8'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/heronsaba/ros2_challenge/ros2_ws/src/install/sensor_interface/lib:/home/heronsaba/ros2_challenges/ros2_ws/src/install/sensor_interface/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/heronsaba'), ('OLDPWD', '/home/heronsaba/ros2_challenge'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'pt_BR.UTF-8'), ('LC_CTYPE', 'pt_BR.UTF-8'), ('SYSTEMD_EXEC_PID', '1119'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/heronsaba/ros2_challenges/ros2_ws/src/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'heronsaba'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'heronsaba'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/heronsaba-virtual-machine:@/tmp/.ICE-unix/1030,unix/heronsaba-virtual-machine:/tmp/.ICE-unix/1030'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'pt_BR.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/fc2e1529_2adc_4b58_a912_6d4370622b0f'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'pt_BR.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.P430L2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.2409'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/heronsaba/ros2_challenge/ros2_ws/src/install/sensor_interface:/home/heronsaba/ros2_challenges/ros2_ws/src/install/senai_ros2:/home/heronsaba/ros2_challenges/ros2_ws/src/install/sensor_interface:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'pt_BR.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'pt_BR.UTF-8'), ('LC_IDENTIFICATION', 'pt_BR.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/heronsaba/ros2_challenge/ros2_ws/src/build/senai_ros2'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/heronsaba/ros2_challenge/ros2_ws/src/install/sensor_interface/local/lib/python3.10/dist-packages:/home/heronsaba/ros2_challenges/ros2_ws/src/install/sensor_interface/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'pt_BR.UTF-8'), ('LC_PAPER', 'pt_BR.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/heronsaba/ros2_challenge/ros2_ws/src/install/sensor_interface:/home/heronsaba/ros2_challenges/ros2_ws/src/install/senai_ros2:/home/heronsaba/ros2_challenges/ros2_ws/src/install/sensor_interface:/opt/ros/humble')]), 'shell': False}
+[23.846734] (senai_ros2) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[23.847536] (senai_ros2) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[23.848121] (senai_ros2) StdoutLine: {'line': b'-- Symlinking: /home/heronsaba/ros2_challenge/ros2_ws/src/install/senai_ros2/lib/senai_ros2/cropper\n'}
+[23.861311] (senai_ros2) StdoutLine: {'line': b'-- Symlinking: /home/heronsaba/ros2_challenge/ros2_ws/src/install/senai_ros2/lib/senai_ros2/receiver\n'}
+[23.874248] (senai_ros2) StdoutLine: {'line': b'-- Symlinking: /home/heronsaba/ros2_challenge/ros2_ws/src/install/senai_ros2/share/senai_ros2/launch/challenge_launcher.py\n'}
+[23.886749] (senai_ros2) StdoutLine: {'line': b'-- Symlinking: /home/heronsaba/ros2_challenge/ros2_ws/src/install/senai_ros2/share/senai_ros2/config/my_config_file.yaml\n'}
+[23.898620] (senai_ros2) StdoutLine: {'line': b'-- Symlinking: /home/heronsaba/ros2_challenge/ros2_ws/src/install/senai_ros2/share/ament_index/resource_index/package_run_dependencies/senai_ros2\n'}
+[23.911062] (senai_ros2) StdoutLine: {'line': b'-- Symlinking: /home/heronsaba/ros2_challenge/ros2_ws/src/install/senai_ros2/share/ament_index/resource_index/parent_prefix_path/senai_ros2\n'}
+[23.922880] (senai_ros2) StdoutLine: {'line': b'-- Symlinking: /home/heronsaba/ros2_challenge/ros2_ws/src/install/senai_ros2/share/senai_ros2/environment/ament_prefix_path.sh\n'}
+[23.930864] (-) TimerEvent: {}
+[23.934225] (senai_ros2) StdoutLine: {'line': b'-- Symlinking: /home/heronsaba/ros2_challenge/ros2_ws/src/install/senai_ros2/share/senai_ros2/environment/ament_prefix_path.dsv\n'}
+[23.946156] (senai_ros2) StdoutLine: {'line': b'-- Symlinking: /home/heronsaba/ros2_challenge/ros2_ws/src/install/senai_ros2/share/senai_ros2/environment/path.sh\n'}
+[23.958856] (senai_ros2) StdoutLine: {'line': b'-- Symlinking: /home/heronsaba/ros2_challenge/ros2_ws/src/install/senai_ros2/share/senai_ros2/environment/path.dsv\n'}
+[23.972532] (senai_ros2) StdoutLine: {'line': b'-- Symlinking: /home/heronsaba/ros2_challenge/ros2_ws/src/install/senai_ros2/share/senai_ros2/local_setup.bash\n'}
+[23.984595] (senai_ros2) StdoutLine: {'line': b'-- Symlinking: /home/heronsaba/ros2_challenge/ros2_ws/src/install/senai_ros2/share/senai_ros2/local_setup.sh\n'}
+[23.996087] (senai_ros2) StdoutLine: {'line': b'-- Symlinking: /home/heronsaba/ros2_challenge/ros2_ws/src/install/senai_ros2/share/senai_ros2/local_setup.zsh\n'}
+[24.007542] (senai_ros2) StdoutLine: {'line': b'-- Symlinking: /home/heronsaba/ros2_challenge/ros2_ws/src/install/senai_ros2/share/senai_ros2/local_setup.dsv\n'}
+[24.020258] (senai_ros2) StdoutLine: {'line': b'-- Symlinking: /home/heronsaba/ros2_challenge/ros2_ws/src/install/senai_ros2/share/senai_ros2/package.dsv\n'}
+[24.031371] (-) TimerEvent: {}
+[24.032113] (senai_ros2) StdoutLine: {'line': b'-- Symlinking: /home/heronsaba/ros2_challenge/ros2_ws/src/install/senai_ros2/share/ament_index/resource_index/packages/senai_ros2\n'}
+[24.043247] (senai_ros2) StdoutLine: {'line': b'-- Symlinking: /home/heronsaba/ros2_challenge/ros2_ws/src/install/senai_ros2/share/senai_ros2/cmake/senai_ros2Config.cmake\n'}
+[24.053927] (senai_ros2) StdoutLine: {'line': b'-- Symlinking: /home/heronsaba/ros2_challenge/ros2_ws/src/install/senai_ros2/share/senai_ros2/cmake/senai_ros2Config-version.cmake\n'}
+[24.065677] (senai_ros2) StdoutLine: {'line': b'-- Symlinking: /home/heronsaba/ros2_challenge/ros2_ws/src/install/senai_ros2/share/senai_ros2/package.xml\n'}
+[24.079084] (senai_ros2) CommandEnded: {'returncode': 0}
+[24.127171] (senai_ros2) JobEnded: {'identifier': 'senai_ros2', 'rc': 0}
+[24.128013] (-) EventReactorShutdown: {}

@@ -1,0 +1,1 @@
+ament_cmake_symlink_install_targets("TARGET_FILES" "/home/heronsaba/ros2_challenge/ros2_ws/src/build/senai_ros2/cropper" "/home/heronsaba/ros2_challenge/ros2_ws/src/build/senai_ros2/receiver" "TARGETS" "cropper" "receiver" "DESTINATION" "lib/senai_ros2")
