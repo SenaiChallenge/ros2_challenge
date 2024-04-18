@@ -1,1 +1,0 @@
-/home/heronsaba/ros2_challenge/ros2_ws/build/sensor_interface/rosidl_cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake

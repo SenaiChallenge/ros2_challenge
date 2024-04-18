@@ -1,1 +1,0 @@
-/home/heronsaba/ros2_challenge/ros2_ws/src/sensor_interface/msg/Nums.msg
